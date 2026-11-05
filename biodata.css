@@ -1,0 +1,219 @@
+body {
+    background-image: url(homey.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: 
+    margin: 10px 0;
+}
+
+div.biodata {
+    width: 80%;
+   background-color: #ffffff; opacity: 50px;        
+    border-radius: 16px;       
+    padding: 25px;             
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    max-width: 800px;          
+    margin: 30px auto;         
+    
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+div.foto {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+div.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top {
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+.foto img.bottom {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+div.isi p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.film-heading {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.film-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.card {
+    flex: 0 0 160px;
+    width: 160px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.media-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.card-img, .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.card-title {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.music-heading {
+    text-align: center;
+    margin-top: 50px;
+    color: #2c3e50;
+}
+
+.music-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.song-card {
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.song-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.song-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.song-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px 0 2px;
+}
+section-heading {
+    text-align: center;
+    margin-top: 50px;
+    color: #2c3e50;
+}
+
+.card-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.popup-card {
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.popup-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.popup-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 13px;
+    margin: 8px 0 2px;
+}
